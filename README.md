@@ -8,5 +8,5 @@
 <small><i>(Currently Ongoing)</i></small>
 <h2>HOME PAGE</h2>
 <p>
-  <img src="./public/images/foodpoint1.jpeg">
+  <img src="./public/images/foodpoint2.jpeg">
 </p>
