@@ -1,0 +1,250 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  background-color: whitesmoke;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid gray; */
+  width: 100%;
+  /* padding: 1rem 0.5rem 0.5rem 0; */
+  /* border-bottom: 1px solid orangered; */
+  background-color: white;
+  text-decoration: none;
+  position: sticky;
+  /* border-radius: 5rem; */
+  top: 0;
+  z-index: 50;
+}
+
+.img-container img {
+  padding: 0.5rem;
+  width: 100px;
+}
+.img-container {
+  display: flex;
+  align-items: center;
+}
+.img-container span {
+  font-size: 2.5rem;
+  color: rgb(239, 64, 0);
+  font-weight: 900;
+}
+nav {
+  /* border: 1px solid rgb(216, 22, 22); */
+  display: flex;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: None;
+  gap: 3rem;
+  /* border: 1px solid gray; */
+  padding-right: 2rem;
+  color: orangered;
+  font-weight: 600;
+  font-size: 1.2rem;
+
+  /* flex-wrap: wrap; */
+}
+
+.body {
+  width: 100%;
+  /* border: 1px solid orangered; */
+  max-width: 1400px;
+  margin: 5px auto;
+}
+.resto-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.resto-card {
+  flex-basis: 280px;
+  /* flex-grow: 1; */
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+.resto-card:hover {
+  transform: scale(0.9);
+  cursor: pointer;
+}
+.resto-card img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 3px 0.5px rgb(206, 206, 206);
+}
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+.resto-card-content {
+  padding: 0.5rem;
+}
+.resto-card-content span img {
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid black; */
+  margin-right: 0.3rem;
+}
+
+.resto-rating {
+  display: flex;
+  /* border: 1px solid black; */
+  font-weight: 700;
+  margin-top: 0.3rem;
+  margin-bottom: 0.2rem;
+}
+.resto-card-content h3 {
+  font-size: 1rem;
+}
+.resto-rating h4 {
+  margin-right: 0.4rem;
+  font-weight: 500;
+}
+.cuisines,
+.locality {
+  color: rgb(99, 98, 98);
+}
+.hide-text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+  font-size: 0.9rem;
+}
+.hide-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 70%;
+  font-size: 0.9rem;
+}
+.resto-header {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  /* border: 1px solid black; */
+  /* position: sticky; */
+
+  background-color: whitesmoke;
+}
+.resto-header button {
+  cursor: pointer;
+}
+.resto-header button {
+  background-color: transparent;
+  border: none;
+  /* box-shadow: 0 0 2px 1px rgb(132, 131, 131); */
+  border: 1px solid rgb(132, 131, 131);
+  padding: 0.5rem 1rem;
+  border-radius: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(132, 131, 131);
+}
+@media (max-width: 800px) {
+  .img-container img {
+    width: 80px;
+  }
+  .img-container span {
+    font-size: 1rem;
+  }
+  nav ul {
+    gap: 1rem;
+  }
+  nav ul {
+    font-size: 0.8rem;
+  }
+  .resto-card {
+    flex-grow: 1;
+  }
+}
+
+/* Shimmer UI CSS */
+.shimmer-container {
+  margin-top: 1rem;
+  width: 100%;
+
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+.shimmer-filters {
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+.shimmer-filters div {
+  border-radius: 1.2rem;
+  width: 100px;
+  height: 30px;
+  background-color: rgb(220, 218, 218);
+}
+.shimmer-card {
+  flex-basis: 280px;
+  flex-grow: 1;
+  /* border: 1px solid black; */
+  padding: 0.5rem;
+}
+.shimmer-img {
+  width: 100%;
+  height: 200px;
+  /* object-fit: cover; */
+  border-radius: 1.5rem;
+  background-color: rgb(220, 218, 218);
+}
+.shimmer-content {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.shimmer-title {
+  width: 60%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(220, 218, 218);
+}
+.shimmer-rating {
+  width: 80%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(220, 218, 218);
+}
+.shimmer-area {
+  width: 50%;
+  height: 1rem;
+  border-radius: 0.5rem;
+  background-color: rgb(220, 218, 218);
+}
+.search-text {
+  border: 1px solid gray;
+  background-color: transparent;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+}
+.search-text:focus {
+  border: 1px solid orangered;
+}
