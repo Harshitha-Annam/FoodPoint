@@ -9,4 +9,7 @@
 <h2>HOME PAGE</h2>
 
   [./public/images/foodpoint2.jpeg](https://github.com/Harshitha-Annam/FoodPoint/blob/main/public/images/foodpoint2.JPG)
+  <p>
+      <img src="https://github.com/Harshitha-Annam/FoodPoint/blob/main/public/images/foodpoint2.JPG"/>
+  </p>
 
