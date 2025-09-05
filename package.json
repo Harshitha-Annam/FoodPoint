@@ -11,6 +11,7 @@
   "name": "foodie-point",
   "version": "1.0.0",
   "description": "This is a react app I built as part of a learning project while I was attempting to learn React Hooks.",
+  "homepage": "https://harshitha-annam.github.io/FoodPoint",
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",
