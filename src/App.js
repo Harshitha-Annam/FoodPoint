@@ -6,7 +6,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import RestoMenu from "./components/RestoMenu";
-import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
+import { createHashRouter, Outlet, RouterProvider } from "react-router-dom";
 
 const App = () => {
   return (
@@ -17,7 +17,7 @@ const App = () => {
   );
 };
 
-const appRouter = createBrowserRouter([
+const appRouter = createHashRouter([
   {
     path: "/",
     element: <App />,
