@@ -10,10 +10,10 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 
 const App = () => {
   return (
-    <>
+    <fragment>
       <Head />
       <Outlet />
-    </>
+    </fragment>
   );
 };
 
